@@ -29,6 +29,9 @@ export const LinkItemNav = styled(NavLink)`
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
   opacity: 1;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.43, 0.21, 0, 1.03);
   &.active {
     opacity: 1;
     font-weight: 800;

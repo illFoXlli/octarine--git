@@ -21,33 +21,10 @@ export const Div = styled.section`
   background-image: url(${registrationBaner});
   background-size: cover;
   border-radius: 20px;
-  /* padding-top: 50px; */
 `;
 
-export const Blur = styled.div`
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  background: #c4c4c4;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  opacity: 0.5;
-
-  border-radius: 20px; */
-`;
-export const Filter = styled.div`
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.5;
-  border-radius: 20px;
-  background: linear-gradient(336.56deg, #000000 58.12%, #ffffff 124.09%);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-`;
+export const Blur = styled.div``;
+export const Filter = styled.div``;
 
 export const Title = styled.p`
   font-family: 'Mulish';
@@ -57,7 +34,6 @@ export const Title = styled.p`
   margin-left: 57px;
   margin-right: 82px;
   color: #ffffff;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 `;
 export const Button = styled.a`
   font-family: 'Mulish';
@@ -68,13 +44,18 @@ export const Button = styled.a`
   color: #ffffff;
   padding: 15px 18px;
   border: 0;
-  background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
+
   box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
   border-radius: 100px;
+  background-image: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
 
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.43, 0.21, 0, 1.03);
   cursor: pointer;
   :focus,
   :hover {
+    background-image: linear-gradient(316.53deg, #326cff 13.2%, #26fff2 71.54%);
     box-shadow: 0px 3px 20px 1px #26fff2;
   }
   :active {

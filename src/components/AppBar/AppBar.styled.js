@@ -48,6 +48,9 @@ export const LinkItemNav = styled(NavLink)`
       height: 2px;
       background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
       border-radius: 50px;
+      transition-property: opacity;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.43, 0.21, 0, 1.03);
     }
   }
   :focus-visible:not(.active),

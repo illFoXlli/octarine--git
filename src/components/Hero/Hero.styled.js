@@ -148,11 +148,16 @@ export const Button = styled.button`
   box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
   border-radius: 100px;
   cursor: pointer;
-  background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
+  background-image: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.43, 0.21, 0, 1.03);
 
   :focus,
   :hover {
     box-shadow: 0px 3px 20px 1px #26fff2;
+    background-image: linear-gradient(316.53deg, #326cff 13.2%, #26fff2 71.54%);
   }
   :active {
     transition: 100ms cubic-bezier(0.43, 0.21, 0, 1.03);
@@ -169,13 +174,19 @@ export const ButtonMore = styled.a`
   color: #323232;
   padding: 15px 30px;
   border: 0;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
   border-radius: 100px;
   cursor: pointer;
+  background-image: linear-gradient(316.53deg, #ffffff 13.2%, #ffffff 71.54%);
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.43, 0.21, 0, 1.03);
   :focus,
   :hover {
     box-shadow: 0px 3px 20px 1px #26fff2;
+    background-image: linear-gradient(316.53deg, #ffffff 13.2%, #ffffff 71.54%);
   }
   :active {
     transition: 100ms cubic-bezier(0.43, 0.21, 0, 1.03);

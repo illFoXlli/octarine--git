@@ -37,10 +37,14 @@ export const Button = styled.button`
   box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
   border-radius: 100px;
   cursor: pointer;
-  background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
-  transition: 760ms cubic-bezier(0.43, 0.21, 0, 1.03);
+  background-image: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.43, 0.21, 0, 1.03);
   :focus,
   :hover {
+    background-image: linear-gradient(316.53deg, #326cff 13.2%, #26fff2 71.54%);
     box-shadow: 0px 3px 20px 1px #26fff2;
   }
   :active {

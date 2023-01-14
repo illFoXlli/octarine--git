@@ -18,23 +18,11 @@ export const Item = styled.li`
   gap: 20px;
   flex-direction: column;
   cursor: pointer;
-  transition: 760ms cubic-bezier(0.43, 0.21, 0, 1.03);
-
-  :active {
-  }
-  :focus,
-  :hover {
-    img {
-      transition: 760ms cubic-bezier(0.43, 0.21, 0, 1.03);
-      box-shadow: 0px 3px 20px 1px #ffffff;
-    }
-    p {
-      transition: 760ms cubic-bezier(0.43, 0.21, 0, 1.03);
-      box-shadow: 0px 3px 20px 1px #ffffff;
-      border-radius: 100px;
-      padding: 4px;
-    }
-  }
+  opacity: 1;
+  box-shadow: 0;
+  transition-property: box-shadow, opacity;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.43, 0.21, 0, 1.03);
 `;
 export const Title = styled.div`
   color: #ffffff;
@@ -49,4 +37,12 @@ export const Img = styled.img`
   width: 190px;
   height: 190px;
   border-radius: 100px;
+  box-shadow: 0;
+  transition-property: box-shadow;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.43, 0.21, 0, 1.03);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 20px 1px #ffffff;
+  }
 `;

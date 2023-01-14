@@ -31,15 +31,6 @@ export const MainTitle = styled.p`
   max-height: 100%;
   padding-bottom: 6px;
   padding-right: 6px;
-  // 10s - скорость анимации
-  background-size: 400%; // Можно менять и подбирать интенсивность
-  transition: background-color 760ms cubic-bezier(0.43, 0.21, 0, 1.03);
-  animation: gradientEnd 1s linear;
-
-  :hover {
-    background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
-    animation: gradient 1s linear;
-  }
 `;
 
 export const CgChevronRightStyle = styled(CgChevronRight)`
