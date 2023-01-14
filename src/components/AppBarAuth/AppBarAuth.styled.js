@@ -58,9 +58,7 @@ export const LinkItemNav = styled(NavLink)`
       position: absolute;
       bottom: -5px;
       left: 0;
-
       display: block;
-
       width: 100%;
       height: 2px;
       background: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
