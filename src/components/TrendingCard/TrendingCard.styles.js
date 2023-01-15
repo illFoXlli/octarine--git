@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   width: 205px;
   height: 309px;
-  /* background-color: red; */
   border-radius: 20px;
 `;
 
